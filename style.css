@@ -1,0 +1,271 @@
+
+body{
+    background-image : url(asset/backgroundp.png);
+    
+}
+
+
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+   margin-top: 20px;
+   
+    
+   
+    
+}
+
+
+.abouts{
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-right: 24px;
+}
+
+.creations{
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-right: 24px;
+
+}
+
+.educations{
+    
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-right: 24px;
+}
+
+.bag{
+    display: flex;
+    
+   
+    
+    
+}
+
+
+
+.name{
+   display: flex;
+   flex-direction: column;
+   
+    padding-top: 159px;
+    padding-left: 200px;
+    
+}
+
+
+
+.hello{
+
+display: inline-flex;
+
+height:2px;
+left: 173px;
+top: 357px;
+
+font-family: 'Istok Web';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 100px;
+color: #FEFEFD;
+border: 1px  rgba(158, 152, 141, 0.976471);
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.zahra{
+
+width: 412px;
+height:2px;
+left: 173px;
+top: 405px;
+font-family: 'Istok Web';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 69px;
+color: #473213;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.and{
+
+width: 321px;
+height:2px;
+left: 173px;
+top: 460px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 29px;
+color: #473213;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+align-items: center;
+}
+
+.im{
+    
+    border: 1px  #9E988D;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color :#FEFEFD;
+    font-weight: 500;
+    
+    
+
+
+}
+.profil{
+    
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 60px;
+    padding-right:450px;
+    padding-left: 600px;
+    width: 472.27px;
+    height: 392px;
+    
+    
+}
+
+
+
+
+.textab{
+    display: flex;
+    justify-content: center;
+    font-family: 'Istok Web';
+    color: #473213;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 800px;
+    
+
+
+
+}
+
+.abpar{
+    font-family: 'Istok Web';
+    font-size: 31px;
+    color: #473213;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 45px;
+    
+    
+    
+}
+
+
+.textcre{
+    display: flex;
+    justify-content: center;
+    font-family: 'Istok Web';
+    color: #473213;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 800px;
+   
+}
+
+.grid-container{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project-one{
+    width: 400px;
+    padding-left: 260px;
+}
+
+.project-two{
+    width: 500px;
+}
+
+.project-three{
+    width: 400px;
+    padding-left: 260px;
+    padding-top: 10px;
+}
+
+.project-four{
+    width: 400px;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+.education{
+    margin-top: 800px;
+    display: flex;
+    gap: 10px;
+}
+
+.texted{
+    
+    display: flex;
+    justify-content:center;
+    font-family: 'Istok Web';
+    color: #473213;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+   
+}
+
+.gridcontainers{
+   margin-top: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.logo-up{
+    width: 300px;
+}
+
+.logo-udemy{
+    width: 300px;
+}
+
+.logos{
+    margin-top: 800px;
+}
