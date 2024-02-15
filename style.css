@@ -1,271 +1,451 @@
-
-body{
-    background-image : url(asset/backgroundp.png);
-    
+*{
+    margin: 0;
+    padding: 0;
 }
 
+body{
+    width: 100%;
+    background-color:#D5D1C0;
+    background-image: url(asset/backgroundp.png);
+    background-size: auto;
+}
 
+@media (min-width: 320px) and (max-width: 767px) { 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        width: 100%;
+        background-image: url(asset/backgroundp.png);
+        background-size: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
-.logo{
+/*--------------------------------------------NAV START-------------------------------------------------------------------*/
+nav{
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    padding-left: 20px;
-    padding-top: 10px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .nav{
+    position: relative;
     display:flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-   margin-top: 20px;
-   
-    
-   
-    
+    justify-content: space-between;
+    background-color: #c1baa8;
+    width: 90%;
+    align-items: center;  
+    padding: 1%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);;
 }
 
-
-.abouts{
-    color: #FFFFFF;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 27px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-right: 24px;
-}
-
-.creations{
-    color: #FFFFFF;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 27px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-right: 24px;
-
-}
-
-.educations{
-    
-    color: #FFFFFF;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 27px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-right: 24px;
-}
-
-.bag{
+.nav ul{
+    text-align: center;
+    width: 400px;
     display: flex;
-    
-   
-    
-    
+    justify-content: space-evenly;
 }
 
-
-
-.name{
-   display: flex;
-   flex-direction: column;
-   
-    padding-top: 159px;
-    padding-left: 200px;
-    
+.nav ul li{
+    display: inline;
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-size: 24px;
 }
 
-
-
-.hello{
-
-display: inline-flex;
-
-height:2px;
-left: 173px;
-top: 357px;
-
-font-family: 'Istok Web';
-font-style: normal;
-font-weight: 700;
-font-size: 60px;
-line-height: 100px;
-color: #FEFEFD;
-border: 1px  rgba(158, 152, 141, 0.976471);
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
+.nav>ul>li>a:hover{
+    color: #473213;
+    transition: all .3s ease-in-out;
 }
 
-.zahra{
-
-width: 412px;
-height:2px;
-left: 173px;
-top: 405px;
-font-family: 'Istok Web';
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 69px;
-color: #473213;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-.and{
-
-width: 321px;
-height:2px;
-left: 173px;
-top: 460px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 29px;
-color: #473213;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-align-items: center;
-}
-
-.im{
-    
-    border: 1px  #9E988D;
+a {
+    text-decoration: none;
+    color: #FEFEFD;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color :#FEFEFD;
+}
+
+/*--------------------------------------------NAV END-------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------NAV HP START--------------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 767px){
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav ul{
+        text-align: center;
+        width: 400px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .nav ul li{
+        display: inline;
+        font-family: 'Istok Web';
+        font-style: normal;
+        font-size: 20px;
+    }
+}
+
+
+/*--------------------------------------------NAV HP END------------------------------------------------------------------*/
+
+
+
+
+/*-----------------------------------------HERO START---------------------------------------------------------------------*/
+.herosection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.herosection .name{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name .hello{
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100px;
+    color: #FEFEFD;
+    border: 1px  rgba(158, 152, 141, 0.976471);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.name .zahra{
     font-weight: 500;
-    
-    
-
-
+    font-family: 'Istok Web';
+    flex-direction: column;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 69px;
+    color: #473213;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.name .and{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;    
+    line-height: 29px;
+    color: #473213;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.name .im{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color :#fefefe;
+    font-weight: 700;
+    line-height: 69px;
+    font-style: normal;
+}
+
 .profil{
-    
+    position: relative;
     display: flex;
-    flex-direction: row-reverse;
-    padding-top: 60px;
-    padding-right:450px;
-    padding-left: 600px;
-    width: 472.27px;
-    height: 392px;
+    width: 401.27px;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+    background-color: #473213;
+    border-radius: 200px;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+/*--------------------------------------------HERO END-------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------HERO HP START--------------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 767px) {
+    .herosection{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .profil{
+        display: flex;
+        width: 350.27px;
+        padding: 0%;
+        margin: 0%;
+        border-radius: 50%;
+    }
+
+    .herosection .name{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .name .hello{
+        padding: 0%;
+        font-family: 'Istok Web';
+        font-style: normal;
+        font-size: 40px;
+        line-height: 80px;
+        color: #FEFEFD;
+        border: 1px  rgba(158, 152, 141, 0.976471);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+    }
+    
+    .name .zahra{
+        font-weight: 500;
+        font-family: 'Istok Web';
+        flex-direction: column;
+        font-style: normal;
+        font-size: 50px;
+        line-height: 20px;
+        color: #473213;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .name .and{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;    
+        line-height: 29px;
+        color: #473213;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .name .im{
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color :#fefefe;
+        font-weight: 700;
+        line-height: 69px;
+        font-style: normal;
+    }
     
     
 }
 
+/*--------------------------------------------HERO HP END------------------------------------------------------------*/
 
 
 
-.textab{
+/*--------------------------------------------SEC ABOUT START---------------------------------------------------------------*/
+#about{
+    position: relative;
+    height: 100vh;
+    padding:  150px;
+   
+}
+
+#about h2{
     display: flex;
     justify-content: center;
     font-family: 'Istok Web';
     color: #473213;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 40px;
     line-height: 58px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 800px;
-    
-
-
-
+    text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
-.abpar{
-    font-family: 'Istok Web';
-    font-size: 31px;
-    color: #473213;
+#about p{
     display: flex;
     justify-content: center;
     text-align: center;
+    font-family: 'Istok Web';
+    font-size: 28px;
+    color: #473213;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    line-height: 45px;
-    
-    
-    
+    line-height: 60px;
+    border-radius: 90px;
+    padding-top: 10px;
+    background-color: #c1baa8;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);;
 }
 
+/*--------------------------------------------SEC ABOUT END---------------------------------------------------------------*/
 
-.textcre{
+
+
+/*--------------------------------------------SEC CREATION START-----------------------------------------------------------*/
+#creation{
+    position: relative;
+    height: 100vh;
+    padding: 50px;
+}
+
+#creation h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Istok Web';
+    color: #473213;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.grid-container{
+    @media  (min-width:1200px){
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: auto;
+    align-items:center;
+    height: 100vh;
+    width: 900px;
+    gap: 3rem;
+    padding-top: 50px;
+}
+}
+#creation .grid-container .project-one{
+    width: 400px;
+    box-shadow: 10px 5px 5px 0px #473213;
+}
+
+#creation .grid-container .project-two{
+    width: 500px;
+    box-shadow: 10px 5px 5px 0px #473213;
+    border-radius: 25px;
+}
+
+#creation .grid-container .project-three{
+    width: 400px;
+    box-shadow: 10px 5px 5px 0px #473213;
+}
+
+#creation .grid-container .project-four{
+    width: 400px;
+    box-shadow: 10px 5px 5px 0px#473213;
+}
+
+/*--------------------------------------------SEC CREATION END-------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------SEC EDUCATION START----------------------------------------------------------*/
+#education{
+    margin-top: 800px;
+    height: 100vh;
+    padding: 50px;
+   
+}
+#education h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Istok Web';
+    color: #473213;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container{
+    padding-top: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container img{
+    width: 300px;
+}
+
+.one{
+    box-shadow: 10px 5px 5px 0px #473213;
+    border-radius: 170px;
+}
+
+.two{
+    box-shadow: 10px 5px 5px 0px #473213; 
+}
+
+.up{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 10px;
+    font-family: 'Istok Web';
+    color: #473213;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 58px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ud{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 50px;
+    font-family: 'Istok Web';
+    color: #473213;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 58px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*--------------------------------------------SEC EDUCATION END------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------FOOTER START-------------------------------------------------------------------*/
+footer{
+    height: 40vh;
+    background-color:#c1baa8; ;
+}
+
+footer h2{
     display: flex;
     justify-content: center;
     font-family: 'Istok Web';
     color: #473213;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 58px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 800px;
-   
+    text-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
-.grid-container{
-    padding-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
-.project-one{
-    width: 400px;
-    padding-left: 260px;
-}
-
-.project-two{
-    width: 500px;
-}
-
-.project-three{
-    width: 400px;
-    padding-left: 260px;
-    padding-top: 10px;
-}
-
-.project-four{
-    width: 400px;
-    padding-left: 60px;
-    padding-top: 10px;
-}
-
-.education{
-    margin-top: 800px;
+.con{
     display: flex;
-    gap: 10px;
-}
-
-.texted{
-    
-    display: flex;
-    justify-content:center;
+    justify-content: center;
     font-family: 'Istok Web';
     color: #473213;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 58px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-   
+    text-align: center;
+    flex-direction: column;
 }
 
-.gridcontainers{
-   margin-top: 130px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+.copyright{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-
-.logo-up{
-    width: 300px;
-}
-
-.logo-udemy{
-    width: 300px;
-}
-
-.logos{
-    margin-top: 800px;
-}
+/*--------------------------------------------FOOTER END------------------------------------------------------------------*/
